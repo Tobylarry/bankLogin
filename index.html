@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" async defer></script>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="left">
+          <div class="frontImgBg">
+            <img src="./images/imgBg.JPG" alt="imgBg" class="front" />
+          </div>
+          <img
+            src="./images/bg-card-back.png"
+            alt="backCard"
+            class="backOfCard"
+          />
+        </div>
+
+        <div class="right">
+
+          <div class="form">
+              <label for="fname">CARDHOLDER NAME</label><br />
+              <input
+                type="text"
+                id="fname"
+                placeholder="e.g. Tobi Jegede"
+              /><br />
+              <label for="lname">CARD NUMBER</label><br />
+              <input
+                type="text"
+                id="cnum"
+
+                placeholder="e.g. 1234 5678 9012 0000"
+              />
+              <p class="p">Wrong format, numbers only!!!</p>
+              <div class="data">
+                <div>
+                  <label for="expireDate">EXP.DATE</label><br />
+                  <input type="text" placeholder="MM" class="month expDate" />
+                  <p class="p1"></p>
+                </div>
+
+                <div>
+                  <label for="year">(MM/YY)</label><br />
+                  <input type="text" placeholder="YY" class="year expDate" />
+                  <p class="p2">Can't be blank!!!</p>
+                </div>
+                <div>
+                  <label for="cvc">CVC</label><br />
+                  <input
+                    type="text"
+                    placeholder="e.g. 123"
+                    class="cvc expDate"
+                  />
+                  <p class="p3">Can't be blank!!!</p>
+                </div>
+              </div>
+              <input type="submit" class="btn" />
+          
+          </div>
+
+          <div class="msg">
+            <span class="mark">🗸</span>
+            <h2>THANK YOU!</h2>
+            <h5>We've added your card details</h5>
+            <input type="submit" class='btn2' value="Continue" />
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
